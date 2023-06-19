@@ -1,0 +1,20 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+
+  min-height: 100vh;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+
+  background-image: url(bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  filter: blur(3px);
+}
