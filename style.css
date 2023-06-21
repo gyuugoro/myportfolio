@@ -2,6 +2,8 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 
   min-height: 100vh;
+
+  text-align:center;
 }
 
 .bg {
@@ -20,4 +22,15 @@ body {
   background-size: cover;
 
   filter: blur(0.1cm);
+}
+
+.container {
+  max-width:10cm;
+}
+
+.icon {
+  width:3cm;
+  height:3cm;
+  border:1.5cm;
+  display:inline;
 }
