@@ -2,13 +2,6 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 
   min-height: 100vh;
-
-  background-attachment: fixed;
-
-  background-image: url(bg.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .bg {
@@ -18,5 +11,13 @@ body {
   left: 0px;
   position: fixed;
 
-  backdrop-filter: blur(0.1cm);
+
+  background-attachment: fixed;
+
+  background-image: url(bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  filter: blur(0.1cm);
 }
