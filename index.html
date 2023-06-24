@@ -50,7 +50,7 @@
     <!-- 名前 -->
     <h1>たこやき</h1>
 
-    <p>高校生。コーディング勉強中。</p>
+    <p>高校生。コーディング勉強中です</p>
 
 
     <!-- リンクs -->
@@ -58,7 +58,7 @@
     <a v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction" v-on:click="clickAction"
       class="button">{{message}}</a>
     <a href="https://www.instagram.com/shotaro20060930/" class="button">Instagram</a>
-    <a href="https://coconala.com/users/3882930" class="button">ココナラ</a>
+    <a href="https://coconala.com/users/3882930" class="button shake shake-constant">ココナラ</a>
     <a href="mailto:takonotataki@gmail.com" class="button">takonotataki@gmail.com</a>
   </div>
 
@@ -79,7 +79,12 @@
         }
 
         const clickAction = () => {
-          navigator.clipboard.writeText("shotaro1216").then(() => { message.value = "IDコピー完了" }, () => { message.value = "Err" })
+          navigator.clipboard.writeText("shotaro1216").then(
+            () => {
+              message.value = "IDコピー完了"
+            }, () => {
+              message.value = "Err"
+            })
         }
 
         return {
