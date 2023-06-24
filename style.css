@@ -1,36 +1,22 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
-
   min-height: 100vh;
-
-  text-align:center;
-}
-
-.bg {
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
-  position: fixed;
-
+  text-align: center;
 
   background-attachment: fixed;
 
-  background-image: url(bg.jpeg);
+  background-image: url(bg.PNG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  filter: blur(0.1cm);
 }
 
 .container {
-  max-width:10cm;
+  max-width: 10cm;
 }
 
 .icon {
-  width:3cm;
-  height:3cm;
-  border:1.5cm;
-  display:inline;
+  width: 3cm;
+  height: 3cm;
+  border-radius: 1.5cm;
 }
