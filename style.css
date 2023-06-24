@@ -104,3 +104,8 @@ h1 {
   text-decoration: none;
   cursor: pointer;
 }
+
+.button:hover {
+  transition: background 0.5s 0.1s ease;
+  background-color: #f29c50;
+}

@@ -36,11 +36,12 @@
   <div class="bg"></div>
 
   <!-- メインコンテンツ -->
-  <div class="container">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <div class="container" id="app">
 
     <!-- アイコン -->
     <div class="icon">
-      <img src="icon.jpeg" class="icon2 shake-little shake-constant">
+      <img src="icon.jpeg" class="icon2">
       <div class="icon2 icon3"></div>
     </div>
 
@@ -49,13 +50,47 @@
 
     <p>高校生。コーディング勉強中。</p>
 
+
     <!-- リンクs -->
-    <a href="https://coconala.com/users/3882930" class="button shake">ココナラ</a>
-    <a href="https://github.com/gyuugoro" class="button shake">Github</a>
-    <a href="https://www.instagram.com/shotaro20060930/" class="button shake">Instagram</a>
-    <a onclick="" class="button shake">Discord @shotaro1216</a>
-    <a href="mailto:takonotataki@gmail.com" class="button shake">takonotataki@gmail.com</a>
+    <a href="https://github.com/gyuugoro" class="button shake shake-constant shake-constant--hover">Github</a>
+    <a href="https://www.instagram.com/shotaro20060930/"
+      class="button  shake  shake-constant shake-constant--hover">Instagram</a>
+    <a v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction" v-on:click="clickAction"
+      class="button  shake  shake-constant shake-constant--hover">{{message}}</a>
+    <a href="https://coconala.com/users/3882930" class="button  shake  shake-constant shake-constant--hover">ココナラ</a>
+    <a href="mailto:takonotataki@gmail.com"
+      class="button  shake  shake-constant shake-constant--hover">takonotataki@gmail.com</a>
   </div>
+
+  <script>
+    const { createApp, ref } = Vue
+
+    createApp({
+      setup() {
+        const message = ref('Discord')
+
+        const mouseOverAction = () => {
+          message.value = "@shotaro1216"
+        }
+
+        const mouseLeaveAction = () => {
+          message.value = "Discord"
+        }
+
+        const clickAction = () => {
+          navigator.clipboard.writeText("shotaro1216").then(() => { message.value = "コピー完了" }, () => { message.value = "Err" })
+        }
+
+        return {
+          message,
+          mouseOverAction,
+          mouseLeaveAction,
+          clickAction
+        }
+      }
+    }).mount('#app')
+  </script>
+
 </body>
 
 </html>
