@@ -58,7 +58,6 @@ body {
   position: relative;
 }
 
-
 .icon2 {
   position: relative;
   display: block;
@@ -69,8 +68,8 @@ body {
   margin-top: 3cm;
 }
 
-
 .icon3 {
+
   position: absolute;
 
   top: 0px;
@@ -80,7 +79,7 @@ body {
 
   z-index: -1;
 
-  animation: ping 1s cubic-bezier(0, 0, .2, 1) infinite;
+  animation: ping 1s ease-out infinite;
 }
 
 h1 {
@@ -89,6 +88,8 @@ h1 {
 }
 
 .button {
+  transition: background 0.5s 0.1s ease;
+
   display: block;
   font-size: 0.5cm;
   padding: 0.4cm;
@@ -98,7 +99,8 @@ h1 {
   border: none;
 
   width: 100%;
-  margin-top: 0.6cm;
+  margin-top: 0.7cm;
 
-  text-decoration-line: none;
+  text-decoration: none;
+  cursor: pointer;
 }
