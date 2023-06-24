@@ -1,7 +1,36 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  min-height: 100vh;
   text-align: center;
+}
+
+.container {
+  display: flex;
+
+  max-width: 10cm;
+  margin-left: auto;
+  margin-right: auto;
+
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.bg {
+  position: fixed;
+
+  z-index: -1;
+
+  width: 100vw;
+  height: 100vh;
 
   background-attachment: fixed;
 
@@ -11,12 +40,31 @@ body {
   background-size: cover;
 }
 
-.container {
-  max-width: 10cm;
-}
-
 .icon {
+  display: block;
   width: 3cm;
   height: 3cm;
   border-radius: 1.5cm;
+
+  margin-top: 4cm;
+}
+
+h1 {
+  display: block;
+  font-size: 1cm;
+}
+
+.button {
+  display: block;
+  font-size: 0.5cm;
+  padding: 0.4cm;
+  color: white;
+  background-color: black;
+  border-radius: 0.3cm;
+  border: none;
+
+  width: 100%;
+  margin-top: 0.6cm;
+
+  text-decoration-line: none;
 }
