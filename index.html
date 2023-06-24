@@ -35,8 +35,10 @@
   <!-- 背景 -->
   <div class="bg"></div>
 
-  <!-- メインコンテンツ -->
+  <!-- Vue先生の登場 -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- メインコンテンツ -->
   <div class="container" id="app">
 
     <!-- アイコン -->
@@ -52,16 +54,15 @@
 
 
     <!-- リンクs -->
-    <a href="https://github.com/gyuugoro" class="button shake shake-constant shake-constant--hover">Github</a>
-    <a href="https://www.instagram.com/shotaro20060930/"
-      class="button  shake  shake-constant shake-constant--hover">Instagram</a>
+    <a href="https://github.com/gyuugoro" class="button">Github</a>
     <a v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction" v-on:click="clickAction"
-      class="button  shake  shake-constant shake-constant--hover">{{message}}</a>
-    <a href="https://coconala.com/users/3882930" class="button  shake  shake-constant shake-constant--hover">ココナラ</a>
-    <a href="mailto:takonotataki@gmail.com"
-      class="button  shake  shake-constant shake-constant--hover">takonotataki@gmail.com</a>
+      class="button">{{message}}</a>
+    <a href="https://www.instagram.com/shotaro20060930/" class="button">Instagram</a>
+    <a href="https://coconala.com/users/3882930" class="button">ココナラ</a>
+    <a href="mailto:takonotataki@gmail.com" class="button">takonotataki@gmail.com</a>
   </div>
 
+  <!-- Vue先生に暴れてもらう -->
   <script>
     const { createApp, ref } = Vue
 
@@ -78,7 +79,7 @@
         }
 
         const clickAction = () => {
-          navigator.clipboard.writeText("shotaro1216").then(() => { message.value = "コピー完了" }, () => { message.value = "Err" })
+          navigator.clipboard.writeText("shotaro1216").then(() => { message.value = "IDコピー完了" }, () => { message.value = "Err" })
         }
 
         return {

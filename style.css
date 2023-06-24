@@ -36,12 +36,11 @@ body {
   width: 100vw;
   height: 100vh;
 
-  background-attachment: fixed;
-
   background-image: url(bg.PNG);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+
 }
 
 @keyframes ping {
@@ -107,5 +106,6 @@ h1 {
 
 .button:hover {
   transition: background 0.5s 0.1s ease;
-  background-color: #f29c50;
+  background-color: white;
+  color: black;
 }
