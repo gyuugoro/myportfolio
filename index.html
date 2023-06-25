@@ -5,6 +5,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name=description content="たこやきのプロフィールページ">
+  <title>たこやきのプロフィール</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
@@ -43,7 +45,7 @@
 
     <!-- アイコン -->
     <div class="icon">
-      <img src="icon.jpeg" class="icon2">
+      <img alt="アイコン" src="icon.jpeg" class="icon2">
       <div class="icon2 icon3"></div>
     </div>
 
@@ -55,8 +57,8 @@
 
     <!-- リンクs -->
     <a href="https://github.com/gyuugoro" target="_blank" class="button">Github</a>
-    <a v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction" v-on:click="clickAction"
-      class="button">{{message}}</a>
+    <div v-on:mouseover="mouseOverAction" v-on:mouseleave="mouseLeaveAction" v-on:click="clickAction" class="button">
+      {{message}}</div>
     <a target="_blank" href="https://www.instagram.com/shotaro20060930/" class="button">Instagram</a>
     <a target="_blank" href="https://coconala.com/users/3882930" class="button">ココナラ</a>
     <a target="_blank" href="mailto:takonotataki@gmail.com" class="button">takonotataki@gmail.com</a>
